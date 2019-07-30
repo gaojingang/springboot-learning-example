@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Thymeleaf 入门</title>
+</head>
+<body>
+	<span th:text="hello"></span>
+	</br>
+	<span th:text="${msg}"></span>
+	</br>
+	<input type="text" name="username" th:value="${msg}"></input>
+	</br>
+	
+	<span th:text="${#strings.isEmpty(msg)}"></span>
+	</br>
+	
+</body>
+</html>
